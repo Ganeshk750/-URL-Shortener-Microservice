@@ -11,21 +11,31 @@
     <h5>URL Shortner Microservies</h5>
     <hr/>
     <img src="./img/fcc.png" width="420" border="2" alt="fcc images">
+    <br>
     <h3><a href="https://www.freecodecamp.org" target="">FreeCodeCamp : APIs and Microservies </a></h3>
     <br>
     <h6>I Used Technologies:</h6>
-    <!-- Four columns: 25% width-->
    <div class="row">
+    <div class="col bg-success"><B>Javascript</B></div>
+    <div class="col bg-danger"><B>Nodejs</B></div>
     <div class="col bg-success"><B>Express</B></div>
     <div class="col bg-primary"><B>MongoDb</B></div>
     <div class="col bg-warning"><B>Bootstrap4</B></div>
     <div class="col bg-danger"><B>Html</B></div>
+    <div class="col bg-success"><B>Css</B></div>
   </div>
   <br>
-  <section>
+ <!--  <section>
       <input type="text" placeholder="Enter URL">
       <a class="btn btn-primary">Get ShortURL</a>
-  </section>
+  </section> -->
+  <form action="api/shorturl/new" method="POST">
+    <label for="url_input">URL to be shortened</label>
+    
+    <input id="url_input" type="text" name="url" value="https://www.freecodecamp.com">
+    <input class="btn btn-primary" type="submit" value="POST URL"> 
+  </form>
 </body>
-<script src="js/app.js"></script>
+<!-- <script src="js/app.js"></script> -->
+
 </html>
